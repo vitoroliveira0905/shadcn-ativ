@@ -76,7 +76,7 @@ const Pricing4 = ({
 }: Pricing4Props) => {
   const [isAnnually, setIsAnnually] = useState(false);
   return (
-    <section className={cn("py-6", className)}>
+    <section className={cn("py-6 px-4", className)}>
       <div>
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <h2 className="text-4xl font-bold text-pretty lg:text-6xl">

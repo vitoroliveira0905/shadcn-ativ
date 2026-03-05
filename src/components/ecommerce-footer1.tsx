@@ -196,7 +196,7 @@ const EcommerceFooter1 = ({
   className,
 }: EcommerceFooter1Props) => {
   return (
-    <section className={cn("pt-8 pb-8 xl:pt-12 px-10 md:px-0 md:ps-20", className)}>
+    <section className={cn("pt-8 pb-8 xl:pt-12 px-5 md:px-0 md:ps-20", className)}>
       <div className="w-full space-y-10">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 md:grid-cols-2 xl:grid-cols-4">
           <div>
@@ -247,7 +247,7 @@ const EcommerceFooter1 = ({
           </p>
           <Separator
             orientation="vertical"
-            className="!h-4.5 bg-foreground/60 max-sm:hidden"
+            className="h-4.5! bg-foreground/60 max-sm:hidden"
           />
           <p className="max-md:text-xs">Powered by Shadcnblocks</p>
           <Button size="icon" variant="outline">

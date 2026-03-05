@@ -61,7 +61,7 @@ const Hero7 = ({
   className,
 }: Hero7Props) => {
   return (
-    <section className={cn("py-32", className)}>
+    <section className={cn("py-32 px-5", className)}>
       <div className="text-center">
         <div className="mx-auto flex max-w-5xl flex-col gap-6">
           <h1 className="text-3xl font-semibold lg:text-6xl">{heading}</h1>

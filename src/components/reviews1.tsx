@@ -101,7 +101,7 @@ const Reviews1 = ({
     reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
 
   return (
-    <section className={cn("py-16 md:py-24 flex flex-col items-center", className)}>
+    <section className={cn("py-16 px-5 md:py-24 flex flex-col items-center", className)}>
       <div className="max-w-6xl">
         {/* Header */}
         <div className="mb-8">
