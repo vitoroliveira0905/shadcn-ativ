@@ -7,6 +7,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 interface Hero7Props {
+  headingDestaque?: string
   heading?: string;
   description?: string;
   button?: {
@@ -26,7 +27,8 @@ interface Hero7Props {
 }
 
 const Hero7 = ({
-  heading = "A Collection of Components Built With Shadcn & Tailwind",
+  headingDestaque = "Zenith",
+  heading = " Atinja o pico da sua produtividade",
   description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
   button = {
     text: "Discover all components",
@@ -61,10 +63,11 @@ const Hero7 = ({
   className,
 }: Hero7Props) => {
   return (
-    <section className={cn("py-32 px-5", className)}>
+    <section className={cn("py-48 px-5", className)}>
       <div className="text-center">
         <div className="mx-auto flex max-w-5xl flex-col gap-6">
-          <h1 className="text-3xl font-semibold lg:text-6xl">{heading}</h1>
+          <h1 className="text-3xl font-bold lg:text-6xl text-primary">{headingDestaque}</h1>
+          <h2 className="text-3xl font-semibold lg:text-6xl">{heading}</h2>
           <p className="text-balance text-muted-foreground lg:text-lg">
             {description}
           </p>
